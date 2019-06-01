@@ -34,7 +34,7 @@ app.use(function (req, res, next) {
 });
 
 
-app.get('/api/foods/', (req, res) => {
+app.get('/api/foods/:id', (req, res) => {
   firebaseDB.getFoodById(res, req.params.id);
 })
 
