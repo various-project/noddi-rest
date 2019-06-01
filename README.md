@@ -37,14 +37,6 @@ Food or drink
     "svoveldioksid" : boolean,
     "sulfitter" : boolean,
     "blotdyr" : boolean,
-    "gluten" : boolean,
-    "lactose" : boolean,
-    "gluten" : boolean,
-    "lactose" : boolean,
-    "gluten" : boolean,
-    "lactose" : boolean,
-    "gluten" : boolean,
-    "lactose" : boolean,
   },
 }
 ```
