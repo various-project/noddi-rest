@@ -1,14 +1,14 @@
-import db from './firebaseConfig';
-
-
+import { db } from './firebaseConfig';
+import firebase from 'firebase';
 
 export const firebaseDB =  {
   getFoodById(res, id) {
-    return(
-      res.status(200).send({
-        success: 'true',
-        message: 'todos retrieved successfully',
-      })
-    )
+    const barCode = "0" + id;
+    const refs = db.ref('foods/' + barCode);
+    refs.on("value", function(snapshot) {
+      res.json(snapshot.val())
+    }, function (errorObject) {
+      res.json("Nothing found!")
+    });
   }
 }
