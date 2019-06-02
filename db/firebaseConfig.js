@@ -1,8 +1,8 @@
 import firebase from 'firebase';
 
-var Environment = require('./environment.js')
+const Environment = require('./environment.js');
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: Environment.API_KEY,
   authDomain: Environment.AUTH_DOMAIN,
   databaseURL: Environment.DATABASE_URL,
@@ -13,4 +13,5 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-export const db = firebase.database();
+const db = firebase.database();
+export { db as default };
