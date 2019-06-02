@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/various-project/noddi-rest.svg?branch=master)](https://travis-ci.com/various-project/noddi-rest)
+
 # noddi-rest
 
 ## Setup
