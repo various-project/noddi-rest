@@ -43,7 +43,7 @@ app.use((req, res) => {
 
 const httpServer = http.createServer(app);
 
-httpServer.listen(3000, () => {
+httpServer.listen(process.env.PORT || 3000, () => {
   // eslint-disable-next-line no-console
   console.log('HTTP Server running on port 3000');
 });
